@@ -1,0 +1,1106 @@
+{
+ "meta": {
+  "studyArea": "Hammamet Bay, Tunisia",
+  "generated": "seeded synthetic dataset (seed=42)",
+  "provenance": "demo",
+  "notice": "All values are SIMULATED for demonstration. Geometry is an approximate trace from satellite imagery.",
+  "historyPeriod": [
+   2000,
+   2020
+  ],
+  "environmentPeriod": [
+   "2018-01",
+   "2020-12"
+  ]
+ },
+ "segments": [
+  {
+   "id": "HMB-01",
+   "name": "El Mrezga 1",
+   "zone": "El Mrezga",
+   "zoneCode": "MRZ",
+   "coordinates": [
+    [
+     36.43622,
+     10.71468
+    ],
+    [
+     36.43557,
+     10.71286
+    ],
+    [
+     36.43466,
+     10.71094
+    ],
+    [
+     36.43358,
+     10.70898
+    ],
+    [
+     36.43271,
+     10.70714
+    ],
+    [
+     36.43189,
+     10.70535
+    ],
+    [
+     36.43133,
+     10.7037
+    ],
+    [
+     36.43092,
+     10.70212
+    ],
+    [
+     36.43058,
+     10.70059
+    ],
+    [
+     36.43038,
+     10.69912
+    ],
+    [
+     36.43011,
+     10.69765
+    ]
+   ],
+   "centroid": [
+    36.43189,
+    10.70535
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -0.56,
+   "predictedRetreat1y": 0.62,
+   "uncertainty1y": 0.46,
+   "risk": "moderate",
+   "lastObservation": "2020-08-03",
+   "shorelineType": "Sandy beach",
+   "landCover": "Mixed residential",
+   "exposure": 1.09,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-02",
+   "name": "El Mrezga 2",
+   "zone": "El Mrezga",
+   "zoneCode": "MRZ",
+   "coordinates": [
+    [
+     36.43011,
+     10.69765
+    ],
+    [
+     36.42941,
+     10.69603
+    ],
+    [
+     36.42889,
+     10.6945
+    ],
+    [
+     36.42835,
+     10.69298
+    ],
+    [
+     36.42761,
+     10.69143
+    ],
+    [
+     36.42666,
+     10.68983
+    ],
+    [
+     36.42619,
+     10.68839
+    ],
+    [
+     36.42579,
+     10.68698
+    ],
+    [
+     36.42533,
+     10.68558
+    ],
+    [
+     36.42455,
+     10.68411
+    ],
+    [
+     36.4239,
+     10.6827
+    ]
+   ],
+   "centroid": [
+    36.42666,
+    10.68983
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -0.67,
+   "predictedRetreat1y": 0.69,
+   "uncertainty1y": 0.45,
+   "risk": "moderate",
+   "lastObservation": "2020-09-08",
+   "shorelineType": "Sandy beach",
+   "landCover": "Mixed residential",
+   "exposure": 1.02,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-03",
+   "name": "El Mrezga 3",
+   "zone": "El Mrezga",
+   "zoneCode": "MRZ",
+   "coordinates": [
+    [
+     36.4239,
+     10.6827
+    ],
+    [
+     36.42329,
+     10.68131
+    ],
+    [
+     36.42278,
+     10.67996
+    ],
+    [
+     36.42232,
+     10.67864
+    ],
+    [
+     36.42168,
+     10.6773
+    ],
+    [
+     36.42078,
+     10.67592
+    ],
+    [
+     36.4199,
+     10.67458
+    ],
+    [
+     36.41898,
+     10.67325
+    ],
+    [
+     36.41795,
+     10.67192
+    ],
+    [
+     36.41668,
+     10.67059
+    ],
+    [
+     36.41559,
+     10.66931
+    ],
+    [
+     36.41447,
+     10.66805
+    ]
+   ],
+   "centroid": [
+    36.4199,
+    10.67458
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -1.16,
+   "predictedRetreat1y": 1.21,
+   "uncertainty1y": 0.63,
+   "risk": "high",
+   "lastObservation": "2020-08-13",
+   "shorelineType": "Sandy beach / dunes",
+   "landCover": "Natural dune vegetation",
+   "exposure": 1.06,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-04",
+   "name": "Hammamet North 1",
+   "zone": "Hammamet North",
+   "zoneCode": "HMN",
+   "coordinates": [
+    [
+     36.41447,
+     10.66805
+    ],
+    [
+     36.41361,
+     10.66685
+    ],
+    [
+     36.41288,
+     10.66567
+    ],
+    [
+     36.41209,
+     10.66452
+    ],
+    [
+     36.41104,
+     10.66336
+    ],
+    [
+     36.4099,
+     10.66222
+    ],
+    [
+     36.40875,
+     10.6611
+    ],
+    [
+     36.40773,
+     10.66002
+    ],
+    [
+     36.40689,
+     10.65896
+    ],
+    [
+     36.406,
+     10.65741
+    ],
+    [
+     36.40517,
+     10.65589
+    ]
+   ],
+   "centroid": [
+    36.4099,
+    10.66222
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -0.83,
+   "predictedRetreat1y": 0.86,
+   "uncertainty1y": 0.51,
+   "risk": "moderate",
+   "lastObservation": "2020-09-18",
+   "shorelineType": "Sandy beach",
+   "landCover": "Urban",
+   "exposure": 1.11,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-05",
+   "name": "Hammamet North 2",
+   "zone": "Hammamet North",
+   "zoneCode": "HMN",
+   "coordinates": [
+    [
+     36.40517,
+     10.65589
+    ],
+    [
+     36.40488,
+     10.65439
+    ],
+    [
+     36.40438,
+     10.65291
+    ],
+    [
+     36.40373,
+     10.65144
+    ],
+    [
+     36.40329,
+     10.64999
+    ],
+    [
+     36.40263,
+     10.64856
+    ],
+    [
+     36.40249,
+     10.6471
+    ],
+    [
+     36.40241,
+     10.64563
+    ],
+    [
+     36.40229,
+     10.64416
+    ],
+    [
+     36.4019,
+     10.64275
+    ],
+    [
+     36.4014,
+     10.64135
+    ],
+    [
+     36.40109,
+     10.63993
+    ],
+    [
+     36.4002,
+     10.63863
+    ]
+   ],
+   "centroid": [
+    36.40249,
+    10.6471
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -1.42,
+   "predictedRetreat1y": 1.65,
+   "uncertainty1y": 0.69,
+   "risk": "high",
+   "lastObservation": "2020-08-23",
+   "shorelineType": "Hotel frontage",
+   "landCover": "Tourism infrastructure",
+   "exposure": 1.1,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-06",
+   "name": "Hammamet North 3",
+   "zone": "Hammamet North",
+   "zoneCode": "HMN",
+   "coordinates": [
+    [
+     36.4002,
+     10.63863
+    ],
+    [
+     36.39987,
+     10.63723
+    ],
+    [
+     36.40015,
+     10.6357
+    ],
+    [
+     36.39982,
+     10.6343
+    ],
+    [
+     36.39936,
+     10.63294
+    ],
+    [
+     36.39873,
+     10.63164
+    ],
+    [
+     36.39833,
+     10.63027
+    ],
+    [
+     36.39799,
+     10.6289
+    ],
+    [
+     36.39727,
+     10.62765
+    ],
+    [
+     36.39643,
+     10.62646
+    ],
+    [
+     36.39573,
+     10.62524
+    ],
+    [
+     36.39498,
+     10.62405
+    ],
+    [
+     36.3941,
+     10.62293
+    ]
+   ],
+   "centroid": [
+    36.39833,
+    10.63027
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -1.6,
+   "predictedRetreat1y": 1.76,
+   "uncertainty1y": 0.7,
+   "risk": "high",
+   "lastObservation": "2020-09-03",
+   "shorelineType": "Hotel frontage",
+   "landCover": "Tourism infrastructure",
+   "exposure": 1.01,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-07",
+   "name": "Hammamet North 4",
+   "zone": "Hammamet North",
+   "zoneCode": "HMN",
+   "coordinates": [
+    [
+     36.3941,
+     10.62293
+    ],
+    [
+     36.39317,
+     10.62185
+    ],
+    [
+     36.39236,
+     10.62073
+    ],
+    [
+     36.39182,
+     10.61951
+    ],
+    [
+     36.39147,
+     10.61819
+    ],
+    [
+     36.39142,
+     10.61673
+    ],
+    [
+     36.39136,
+     10.61526
+    ],
+    [
+     36.39137,
+     10.61373
+    ],
+    [
+     36.3926,
+     10.61202
+    ],
+    [
+     36.39426,
+     10.61056
+    ],
+    [
+     36.39601,
+     10.60903
+    ]
+   ],
+   "centroid": [
+    36.39142,
+    10.61673
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -0.34,
+   "predictedRetreat1y": 0.38,
+   "uncertainty1y": 0.45,
+   "risk": "low",
+   "lastObservation": "2020-08-08",
+   "shorelineType": "Rocky / seawall (Medina)",
+   "landCover": "Historic urban",
+   "exposure": 0.98,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-08",
+   "name": "Hammamet South 1",
+   "zone": "Hammamet South",
+   "zoneCode": "HMS",
+   "coordinates": [
+    [
+     36.39601,
+     10.60903
+    ],
+    [
+     36.39757,
+     10.60759
+    ],
+    [
+     36.39928,
+     10.60605
+    ],
+    [
+     36.40011,
+     10.605
+    ],
+    [
+     36.40064,
+     10.60352
+    ],
+    [
+     36.40172,
+     10.60166
+    ],
+    [
+     36.4025,
+     10.59997
+    ],
+    [
+     36.40289,
+     10.5985
+    ],
+    [
+     36.40288,
+     10.59663
+    ],
+    [
+     36.40251,
+     10.59498
+    ]
+   ],
+   "centroid": [
+    36.40172,
+    10.60166
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -1.12,
+   "predictedRetreat1y": 1.3,
+   "uncertainty1y": 0.58,
+   "risk": "high",
+   "lastObservation": "2020-09-13",
+   "shorelineType": "Hotel frontage",
+   "landCover": "Tourism infrastructure",
+   "exposure": 1.08,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-09",
+   "name": "Hammamet South 2",
+   "zone": "Hammamet South",
+   "zoneCode": "HMS",
+   "coordinates": [
+    [
+     36.40251,
+     10.59498
+    ],
+    [
+     36.40228,
+     10.59322
+    ],
+    [
+     36.40219,
+     10.59135
+    ],
+    [
+     36.40182,
+     10.58964
+    ],
+    [
+     36.40154,
+     10.58787
+    ],
+    [
+     36.40095,
+     10.58632
+    ],
+    [
+     36.40043,
+     10.58469
+    ],
+    [
+     36.39976,
+     10.58319
+    ],
+    [
+     36.39907,
+     10.5817
+    ],
+    [
+     36.3985,
+     10.5801
+    ],
+    [
+     36.39803,
+     10.5784
+    ]
+   ],
+   "centroid": [
+    36.40095,
+    10.58632
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -1.97,
+   "predictedRetreat1y": 1.86,
+   "uncertainty1y": 0.76,
+   "risk": "high",
+   "lastObservation": "2020-08-18",
+   "shorelineType": "Hotel frontage",
+   "landCover": "Tourism infrastructure",
+   "exposure": 0.98,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-10",
+   "name": "Hammamet South 3",
+   "zone": "Hammamet South",
+   "zoneCode": "HMS",
+   "coordinates": [
+    [
+     36.39803,
+     10.5784
+    ],
+    [
+     36.3975,
+     10.57672
+    ],
+    [
+     36.39681,
+     10.5752
+    ],
+    [
+     36.39604,
+     10.57375
+    ],
+    [
+     36.39526,
+     10.57229
+    ],
+    [
+     36.39448,
+     10.57084
+    ],
+    [
+     36.39365,
+     10.56942
+    ],
+    [
+     36.39287,
+     10.56795
+    ],
+    [
+     36.39208,
+     10.56648
+    ],
+    [
+     36.39114,
+     10.56517
+    ],
+    [
+     36.39022,
+     10.56385
+    ]
+   ],
+   "centroid": [
+    36.39448,
+    10.57084
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -2.41,
+   "predictedRetreat1y": 2.71,
+   "uncertainty1y": 0.86,
+   "risk": "critical",
+   "lastObservation": "2020-09-23",
+   "shorelineType": "Sandy beach",
+   "landCover": "Tourism infrastructure",
+   "exposure": 0.99,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-11",
+   "name": "Hammamet South 4",
+   "zone": "Hammamet South",
+   "zoneCode": "HMS",
+   "coordinates": [
+    [
+     36.39022,
+     10.56385
+    ],
+    [
+     36.38923,
+     10.5626
+    ],
+    [
+     36.38818,
+     10.56143
+    ],
+    [
+     36.38727,
+     10.56008
+    ],
+    [
+     36.38621,
+     10.55892
+    ],
+    [
+     36.38512,
+     10.5578
+    ],
+    [
+     36.38408,
+     10.55663
+    ],
+    [
+     36.383,
+     10.5555
+    ],
+    [
+     36.38184,
+     10.55449
+    ],
+    [
+     36.38069,
+     10.55348
+    ],
+    [
+     36.37971,
+     10.55221
+    ]
+   ],
+   "centroid": [
+    36.38512,
+    10.5578
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": 0.79,
+   "predictedRetreat1y": -0.82,
+   "uncertainty1y": 0.57,
+   "risk": "low",
+   "lastObservation": "2020-08-03",
+   "shorelineType": "Updrift of marina breakwater",
+   "landCover": "Port infrastructure",
+   "exposure": 1.16,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-12",
+   "name": "Yasmine Hammamet Marina 1",
+   "zone": "Yasmine Hammamet Marina",
+   "zoneCode": "YSM",
+   "coordinates": [
+    [
+     36.37971,
+     10.55221
+    ],
+    [
+     36.37845,
+     10.55137
+    ],
+    [
+     36.37725,
+     10.55044
+    ],
+    [
+     36.376,
+     10.54962
+    ],
+    [
+     36.37492,
+     10.54949
+    ],
+    [
+     36.3738,
+     10.54946
+    ],
+    [
+     36.37234,
+     10.54906
+    ],
+    [
+     36.37103,
+     10.54841
+    ],
+    [
+     36.37037,
+     10.54654
+    ],
+    [
+     36.37029,
+     10.54456
+    ],
+    [
+     36.37001,
+     10.54295
+    ],
+    [
+     36.36891,
+     10.54182
+    ]
+   ],
+   "centroid": [
+    36.37234,
+    10.54906
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": 1.11,
+   "predictedRetreat1y": -1.07,
+   "uncertainty1y": 0.63,
+   "risk": "low",
+   "lastObservation": "2020-09-08",
+   "shorelineType": "Marina entrance",
+   "landCover": "Port infrastructure",
+   "exposure": 1.04,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-13",
+   "name": "Yasmine Hammamet Marina 2",
+   "zone": "Yasmine Hammamet Marina",
+   "zoneCode": "YSM",
+   "coordinates": [
+    [
+     36.36891,
+     10.54182
+    ],
+    [
+     36.36779,
+     10.54074
+    ],
+    [
+     36.36662,
+     10.53973
+    ],
+    [
+     36.36541,
+     10.53879
+    ],
+    [
+     36.36415,
+     10.53797
+    ],
+    [
+     36.36293,
+     10.53708
+    ],
+    [
+     36.36171,
+     10.53615
+    ],
+    [
+     36.36052,
+     10.53517
+    ],
+    [
+     36.35927,
+     10.53431
+    ],
+    [
+     36.35802,
+     10.53343
+    ],
+    [
+     36.35674,
+     10.53267
+    ]
+   ],
+   "centroid": [
+    36.36293,
+    10.53708
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -2.64,
+   "predictedRetreat1y": 2.83,
+   "uncertainty1y": 0.94,
+   "risk": "critical",
+   "lastObservation": "2020-08-13",
+   "shorelineType": "Downdrift of marina",
+   "landCover": "Tourism infrastructure",
+   "exposure": 0.98,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-14",
+   "name": "Yasmine Hammamet Marina 3",
+   "zone": "Yasmine Hammamet Marina",
+   "zoneCode": "YSM",
+   "coordinates": [
+    [
+     36.35674,
+     10.53267
+    ],
+    [
+     36.35548,
+     10.5318
+    ],
+    [
+     36.35422,
+     10.53095
+    ],
+    [
+     36.35294,
+     10.53012
+    ],
+    [
+     36.35168,
+     10.52925
+    ],
+    [
+     36.35036,
+     10.52852
+    ],
+    [
+     36.34902,
+     10.52788
+    ],
+    [
+     36.34776,
+     10.52694
+    ],
+    [
+     36.34647,
+     10.52608
+    ],
+    [
+     36.34512,
+     10.52544
+    ],
+    [
+     36.34379,
+     10.52469
+    ]
+   ],
+   "centroid": [
+    36.35036,
+    10.52852
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -1.73,
+   "predictedRetreat1y": 1.9,
+   "uncertainty1y": 0.77,
+   "risk": "high",
+   "lastObservation": "2020-09-18",
+   "shorelineType": "Sandy beach / dunes",
+   "landCover": "Natural dune vegetation",
+   "exposure": 1.04,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-15",
+   "name": "Yasmine Hammamet Marina 4",
+   "zone": "Yasmine Hammamet Marina",
+   "zoneCode": "YSM",
+   "coordinates": [
+    [
+     36.34379,
+     10.52469
+    ],
+    [
+     36.34251,
+     10.5237
+    ],
+    [
+     36.34121,
+     10.52275
+    ],
+    [
+     36.33986,
+     10.522
+    ],
+    [
+     36.3385,
+     10.52123
+    ],
+    [
+     36.33717,
+     10.52031
+    ],
+    [
+     36.33578,
+     10.51962
+    ],
+    [
+     36.33443,
+     10.51864
+    ],
+    [
+     36.33302,
+     10.51803
+    ],
+    [
+     36.33162,
+     10.51723
+    ]
+   ],
+   "centroid": [
+    36.33717,
+    10.52031
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -1.25,
+   "predictedRetreat1y": 1.3,
+   "uncertainty1y": 0.63,
+   "risk": "high",
+   "lastObservation": "2020-08-23",
+   "shorelineType": "Sandy beach / dunes",
+   "landCover": "Natural dune vegetation",
+   "exposure": 1.12,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  },
+  {
+   "id": "HMB-16",
+   "name": "Yasmine Hammamet Marina 5",
+   "zone": "Yasmine Hammamet Marina",
+   "zoneCode": "YSM",
+   "coordinates": [
+    [
+     36.33162,
+     10.51723
+    ],
+    [
+     36.33021,
+     10.51652
+    ],
+    [
+     36.32878,
+     10.51583
+    ],
+    [
+     36.32734,
+     10.51517
+    ],
+    [
+     36.3259,
+     10.51443
+    ],
+    [
+     36.32495,
+     10.51374
+    ],
+    [
+     36.32348,
+     10.513
+    ],
+    [
+     36.32199,
+     10.51256
+    ],
+    [
+     36.3205,
+     10.51183
+    ],
+    [
+     36.31951,
+     10.51117
+    ],
+    [
+     36.31851,
+     10.51074
+    ]
+   ],
+   "centroid": [
+    36.32495,
+    10.51374
+   ],
+   "lengthKm": 1.6,
+   "historicalRate": -0.88,
+   "predictedRetreat1y": 1.03,
+   "uncertainty1y": 0.56,
+   "risk": "high",
+   "lastObservation": "2020-09-03",
+   "shorelineType": "Sandy beach",
+   "landCover": "Agricultural / natural",
+   "exposure": 1.14,
+   "dataSource": "Simulated (demo) \u2014 Landsat / Sentinel-2 style shoreline extraction",
+   "provenance": "demo"
+  }
+ ]
+}

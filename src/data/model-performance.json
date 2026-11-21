@@ -1,0 +1,39 @@
+{
+  "status": "awaiting_training",
+  "trainingDataset": null,
+  "target": "One-year shoreline retreat per segment (m)",
+  "validation": "Not yet performed",
+  "models": [
+    {
+      "id": "random_forest",
+      "name": "Random Forest",
+      "library": "scikit-learn RandomForestRegressor",
+      "status": "awaiting_training",
+      "trainedAt": null,
+      "metrics": null,
+      "actualVsPredicted": null,
+      "featureImportance": null
+    },
+    {
+      "id": "xgboost",
+      "name": "XGBoost",
+      "library": "xgboost XGBRegressor",
+      "status": "awaiting_training",
+      "trainedAt": null,
+      "metrics": null,
+      "actualVsPredicted": null,
+      "featureImportance": null
+    }
+  ],
+  "features": [
+    "Previous shoreline retreat",
+    "Significant wave height",
+    "Wave direction",
+    "Wave period",
+    "Wind speed",
+    "Sea level",
+    "NDWI",
+    "MNDWI",
+    "Land cover"
+  ]
+}
