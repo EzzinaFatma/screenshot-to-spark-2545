@@ -11,6 +11,8 @@ export interface CoastalMapProps {
   exaggeration?: number;
   /** Optional override of predicted shorelines (e.g. from a prediction run). */
   predictedShorelines?: Record<string, LatLng[]>;
+  /** Layer-control label for the predicted shoreline overlay. */
+  predictedLabel?: string;
   compact?: boolean;
   className?: string;
 }

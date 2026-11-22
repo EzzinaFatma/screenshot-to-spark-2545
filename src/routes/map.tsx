@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { useMemo, useState } from "react";
-import { Search } from "lucide-react";
+import { PanelRightOpen, Search } from "lucide-react";
 import { CoastalMapLazy } from "@/components/map/CoastalMapLazy";
 import { RiskBadge, RiskDot } from "@/components/data/RiskBadge";
+import { SegmentDetailsSheet } from "@/components/segment/SegmentDetailsSheet";
 import { Input } from "@/components/ui/input";
 import { segmentsQuery } from "@/lib/api/queries";
 import { GAZETTEER } from "@/lib/geo";
@@ -31,6 +32,8 @@ function MapPage() {
   const [selected, setSelected] = useState<string | null>(null);
   const [focus, setFocus] = useState<{ id: string; nonce: number } | null>(null);
   const [exaggeration, setExaggeration] = useState(1);
+  const [detailsId, setDetailsId] = useState<string | null>(null);
+  const detailsSegment = data.segments.find((s) => s.id === detailsId) ?? null;
   const term = q.trim().toLowerCase();
   const places = term ? GAZETTEER.filter((p) => p.name.toLowerCase().includes(term)) : [];
   const list = useMemo(
@@ -67,10 +70,13 @@ function MapPage() {
         </div>
         <ul className="max-h-72 flex-1 overflow-y-auto lg:max-h-none">
           {list.map((s) => (
-            <li key={s.id}>
-              <button onClick={() => go(s.id)} className={`flex w-full items-center justify-between gap-2 px-4 py-2.5 text-left text-sm hover:bg-navy-soft ${selected === s.id ? "bg-navy-soft" : ""}`}>
-                <span className="flex items-center gap-2"><RiskDot risk={s.risk} />{s.name}</span>
+            <li key={s.id} className={`group flex items-center hover:bg-navy-soft ${selected === s.id ? "bg-navy-soft" : ""}`}>
+              <button onClick={() => go(s.id)} className="flex min-w-0 flex-1 items-center justify-between gap-2 py-2.5 pl-4 pr-1 text-left text-sm">
+                <span className="flex min-w-0 items-center gap-2"><RiskDot risk={s.risk} /><span className="truncate">{s.name}</span></span>
                 <span className="font-mono text-xs text-navy-muted">{formatRate(s.historicalRate)}</span>
+              </button>
+              <button onClick={() => setDetailsId(s.id)} aria-label={`Open details for ${s.id}`} title="Open segment details" className="mr-2 rounded p-1.5 text-navy-muted hover:bg-navy-border hover:text-navy-foreground">
+                <PanelRightOpen className="size-4" />
               </button>
             </li>
           ))}
@@ -82,8 +88,9 @@ function MapPage() {
         </div>
       </aside>
       <div className="h-[70vh] flex-1 lg:h-auto">
-        <CoastalMapLazy segments={data.segments} selectedId={selected} focusRequest={focus} onSelect={setSelected} exaggeration={exaggeration} />
+        <CoastalMapLazy segments={data.segments} selectedId={selected} focusRequest={focus} onSelect={setSelected} onOpenDetails={setDetailsId} exaggeration={exaggeration} />
       </div>
+      <SegmentDetailsSheet segment={detailsSegment} onClose={() => setDetailsId(null)} />
     </div>
   );
 }

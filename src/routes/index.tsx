@@ -8,6 +8,8 @@ import { RiskBadge } from "@/components/data/RiskBadge";
 import { CoastalMapLazy } from "@/components/map/CoastalMapLazy";
 import { CoastlineLocator } from "@/components/map/CoastlineLocator";
 import { Button } from "@/components/ui/button";
+import { SegmentDetailsSheet } from "@/components/segment/SegmentDetailsSheet";
+import { useState } from "react";
 import { segmentsQuery } from "@/lib/api/queries";
 import { formatDate, formatRate, formatRetreat } from "@/lib/format";
 
@@ -29,6 +31,7 @@ export const Route = createFileRoute("/")({
 function Overview() {
   const { data } = useSuspenseQuery(segmentsQuery);
   const segs = data.segments;
+  const [detailsId, setDetailsId] = useState<string | null>(null);
   const total = segs.reduce((a, s) => a + s.lengthKm, 0);
   const meanRate = segs.reduce((a, s) => a + s.historicalRate, 0) / segs.length;
   const critical = segs.filter((s) => s.risk === "critical").length;
@@ -77,24 +80,40 @@ function Overview() {
         <div className="mt-6 grid gap-6 lg:grid-cols-3">
           <Panel title="Erosion risk map" subtitle="Click a segment for details" className="lg:col-span-2" bodyClassName="p-0">
             <div className="h-[420px] overflow-hidden rounded-b-xl">
-              <CoastalMapLazy segments={segs} compact />
+              <CoastalMapLazy segments={segs} compact onOpenDetails={setDetailsId} />
             </div>
           </Panel>
           <Panel title="Top erosion hotspots" badges={<><ProvenanceBadge kind="prediction" /><ProvenanceBadge kind="demo" /></>}>
             <ul className="divide-y">
               {hotspots.map((s) => (
-                <li key={s.id} className="flex items-center justify-between gap-2 py-2.5 text-sm">
-                  <div>
-                    <p className="font-medium">{s.name}</p>
-                    <p className="font-mono text-xs text-muted-foreground">{s.id} · {formatRetreat(s.predictedRetreat1y)} / yr</p>
-                  </div>
-                  <RiskBadge risk={s.risk} />
+                <li key={s.id}>
+                  <button type="button" onClick={() => setDetailsId(s.id)} className="flex w-full items-center justify-between gap-2 rounded-md px-1 py-2.5 text-left text-sm transition-colors hover:bg-muted">
+                    <div>
+                      <p className="font-medium">{s.name}</p>
+                      <p className="font-mono text-xs text-muted-foreground">{s.id} · {formatRetreat(s.predictedRetreat1y)} / yr</p>
+                    </div>
+                    <RiskBadge risk={s.risk} />
+                  </button>
                 </li>
               ))}
             </ul>
           </Panel>
         </div>
+        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {[
+            { to: "/map" as const, title: "Coastal Map", text: "Satellite basemap, risk segments, historical and predicted shorelines." },
+            { to: "/analytics" as const, title: "Historical Analysis", text: "Shoreline evolution 2000–2020, annual rates and hotspot detection." },
+            { to: "/predictions" as const, title: "AI Prediction Center", text: "Run one-year-ahead retreat scenarios and review model performance." },
+            { to: "/data-sources" as const, title: "Environmental Data", text: "Waves, wind, sea level and water indices with their data sources." },
+          ].map((c) => (
+            <Link key={c.to} to={c.to} className="group rounded-xl border bg-card p-4 shadow-card transition-shadow hover:shadow-elevated">
+              <p className="font-display text-sm font-semibold">{c.title} <span className="inline-block text-primary transition-transform group-hover:translate-x-0.5">→</span></p>
+              <p className="mt-1 text-xs text-muted-foreground">{c.text}</p>
+            </Link>
+          ))}
+        </div>
       </PageBody>
+      <SegmentDetailsSheet segment={segs.find((s) => s.id === detailsId) ?? null} onClose={() => setDetailsId(null)} />
     </>
   );
 }

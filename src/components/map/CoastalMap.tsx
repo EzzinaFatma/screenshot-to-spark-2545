@@ -105,6 +105,7 @@ export default function CoastalMap({
   onOpenDetails,
   exaggeration = 1,
   predictedShorelines,
+  predictedLabel = "Predicted shoreline (+1 yr)",
   compact,
   className,
 }: CoastalMapProps) {
@@ -162,7 +163,7 @@ export default function CoastalMap({
               ))}
             </LayerGroup>
           </LayersControl.Overlay>
-          <LayersControl.Overlay checked={!compact} name="Predicted shoreline (+1 yr)">
+          <LayersControl.Overlay checked={!compact} name={predictedLabel}>
             <LayerGroup>
               {predicted.map((p) => (
                 <Polyline key={p.id} positions={p.line} pathOptions={{ weight: 2.5, className: "shore-predicted", interactive: false }} />
