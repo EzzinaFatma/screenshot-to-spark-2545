@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+
+- Pages read data only through the query options in `src/lib/api/queries.ts` (backed by `src/lib/api/client.ts`), so swapping the local demo dataset for the real backend needs no page changes.
+- Every displayed value carries a provenance badge (historical, satellite, prediction, demo) from `ProvenanceBadge`; measured and predicted values must stay visually distinct.

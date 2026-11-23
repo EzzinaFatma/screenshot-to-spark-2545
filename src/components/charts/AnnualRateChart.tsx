@@ -1,5 +1,6 @@
 import { Bar, BarChart, CartesianGrid, Cell, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { AXIS, GRID, LegendItem, TooltipCard } from "./chart-kit";
+import { signed } from "@/lib/format";
 
 /** Year-on-year shoreline change. Red = erosion (landward), teal = accretion. */
 export function AnnualRateChart({ rates, height = 200 }: { rates: { year: number; rate: number }[]; height?: number }) {
@@ -10,7 +11,7 @@ export function AnnualRateChart({ rates, height = 200 }: { rates: { year: number
           <BarChart data={rates} margin={{ top: 8, right: 8, bottom: 0, left: -8 }}>
             <CartesianGrid {...GRID} />
             <XAxis dataKey="year" {...AXIS} interval="preserveStartEnd" />
-            <YAxis {...AXIS} unit=" m" width={56} />
+            <YAxis {...AXIS} width={60} tickFormatter={(v: number) => `${signed(v, 1)} m`} />
             <ReferenceLine y={0} stroke="var(--muted-foreground)" strokeOpacity={0.5} />
             <Tooltip cursor={{ fill: "var(--muted)" }} content={<TooltipCard unit="m/yr" labelFormat={(l) => `Year ${l}`} />} />
             <Bar dataKey="rate" name="Shoreline change" radius={[3, 3, 3, 3]} isAnimationActive={false}>

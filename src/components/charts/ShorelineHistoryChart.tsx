@@ -14,10 +14,11 @@ interface DotProps {
   cx?: number;
   cy?: number;
   index?: number;
+  value?: unknown;
 }
 
-function SquareDot({ cx, cy, index }: DotProps) {
-  if (cx === undefined || cy === undefined) return <g key={`sq-${index}`} />;
+function SquareDot({ cx, cy, index, value }: DotProps) {
+  if (cx === undefined || cy === undefined || value === undefined || value === null) return <g key={`sq-${index}`} />;
   return <rect key={`sq-${index}`} x={cx - 4} y={cy - 4} width={8} height={8} fill="var(--prov-historical)" stroke="var(--card)" strokeWidth={1.5} />;
 }
 
